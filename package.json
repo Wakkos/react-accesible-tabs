@@ -1,0 +1,21 @@
+{
+  "name": "react-accesible-tabs",
+  "version": "1.0.0",
+  "description": "React Accesible Tabs component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "react-accesible-tabs"
+  },
+  "keywords": [
+    "React",
+    "Typescript",
+    "Tabs",
+    "Accesibility"
+  ],
+  "author": "ID3",
+  "license": "ISC"
+}
