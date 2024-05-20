@@ -18,6 +18,20 @@ raTabs uses css custom properties due to:
 2. Custom properties can be access and with all values can be easily changed with Javascript.
 3. Custom properties are very convenient if you want to create dynamic themes with different colors.
 
+All raTabs custom properties are divided into Custom Properties and User Custom Properties:
+
+**Custom Properties**
+
+1. Colors
+2. Borders
+3. Paddings
+4. Gaps
+5. Cursor
+
+**User Custom Properties**
+
+1.
+
 ## How to install raTabs
 
 ### Authors
