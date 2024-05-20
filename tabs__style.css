@@ -1,0 +1,30 @@
+.tabs [role="tab"] {
+  border: none;
+  padding: 12px 30px;
+  background-color: beige;
+  color: darkgreen;
+  cursor: pointer;
+}
+
+.tabs [role="tab"][aria-selected="true"] {
+  background-color: darkgreen;
+  color: beige;
+}
+
+.tabs [role="tabpanel"] {
+  border: solid 1px darkgreen;
+  padding: 10px;
+}
+
+.tabs [role="tablist"] {
+  display: flex;
+  gap: 0;
+}
+
+/* disabled style */
+
+.tabs [role="tab"]:disabled {
+  background-color: lightgray;
+  color: gray;
+  cursor: not-allowed;
+}
