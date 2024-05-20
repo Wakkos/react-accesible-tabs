@@ -20,17 +20,54 @@ raTabs uses css custom properties due to:
 
 All raTabs custom properties are divided into Custom Properties and User Custom Properties:
 
-**Custom Properties**
+**Custom Properties** these are the base custom properties with all their values.
 
-1. Colors
-2. Borders
-3. Paddings
-4. Gaps
-5. Cursor
+1. **Colors**
+   --raTabs-color-darkgreen: darkgreen;
+   --raTabs-color-beige: beige;
+   --raTabs-color-gray: gray;
+   --raTabs-color-lightgray: lightgray;
+2. **Borders**
+   --raTabs-border-style-solid: solid;
+   --raTabs-border-width: 1px;
+   --raTabs-border-color-darkgreen: darkgreen;
+   --raTabs-border-none: none;
+3. **Paddings**
+   --raTabs-padding-top: 12px;
+   --raTabs-padding-bottom: 12px;
+   --raTabs-padding-right: 30px;
+   --raTabs-padding-left: 30px;
+   --raTabs-padding: 10px;
+4. **Gaps**
+   --raTabs-gap: 0;
+5. **Cursor**
+   --raTabs-cursor-pointer: pointer;
+   --raTabs-cursor-not-allowed: not-allowed;
 
-**User Custom Properties**
+**User Custom Properties** these are the same custom properties but where are being actively used.
 
-1.
+1. **user colors**
+   --raTabs-color-text: var(--raTabs-border-color-darkgreen);
+   --raTabs-color-bg: var(--raTabs-border-color-beige);
+   --raTabs-color-text-active: var(--raTabs-border-color-beige);
+   --raTabs-color-bg-active: var(--raTabs-border-color-darkgreen);
+   --raTabs-color-text-desibled: var(--raTabs-color-gray);
+   --raTabs-color-bg-desibled: var(--raTabs-color-lightgray);
+2. **user border**
+   --raTabs-border-style-tabpanel: var(--raTabs-border-style-solid);
+   --raTabs-border-width-tabpanel: var(--raTabs-border-width);
+   --raTabs-border-color-tabpanel: var(--raTabs-border-color-darkgreen);
+   --raTabs-border-none-items: var(--raTabs-border-none);
+3. **user paddings**
+   --raTabs-padding-tabs-items: var(--raTabs-padding-top)
+   var(--raTabs-padding-right) var(--raTabs-padding-bottom)
+   var(--raTabs-padding-left);
+   --raTabs-padding-tabpanel: var(--raTabs-padding);
+4. **user gaps**
+   --raTabs-gap-tablist: var(--raTabs-gap);
+5. **user cursor**
+   --raTabs-cursor-item-active: var(--raTabs-cursor-pointer);
+   --raTabs-cursor-item-disabled: var(--raTabs-cursor-not-allowed);
 
 ## How to install raTabs
 
