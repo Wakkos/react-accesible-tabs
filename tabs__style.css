@@ -1,30 +1,57 @@
-.tabs [role="tab"] {
-  border: none;
-  padding: 12px 30px;
-  background-color: beige;
-  color: darkgreen;
-  cursor: pointer;
+:root {
+  /* colors */
+  --raTabs-color-beige: beige;
+  --raTabs-color-darkgreen: darkgreen;
+  --raTabs-color-gray-desibled: gray;
+  --raTabs-color-lightgray-desibled: lightgray;
+
+  /* border */
+  --raTabs-border-tabpanel: solid 1px;
+  --raTabs-border-none-items: none;
+
+  /* paddings */
+  --raTabs-padding-tabs-items: 12px 30px;
+  --raTabs-padding-tabpanel: 10px;
+
+  /* gaps */
+  --raTabs-gap-tablist: 0;
+
+  /* cursor */
+  --raTabs-cursor-item-active: pointer;
+  --raTabs-cursor-item-disabled: not-allowed;
 }
+
+/* tabs */
+
+.raTabs [role="tab"] {
+  border: var(--raTabs-border-none-items);
+  padding: var(--raTabs-padding-tabs-items);
+  background-color: var(--raTabs-color-darkgreen);
+  color: var(--raTabs-color-beige);
+  cursor: var(--raTabs-cursor-item-active);
+}
+
+.raTabs [role="tabpanel"] {
+  border: var(--raTabs-border-tabpanel, --raTabs-color-darkgreen);
+  padding: var(--raTabs-padding-tabpanel);
+}
+
+.raTabs [role="tablist"] {
+  display: flex;
+  gap: var(--raTabs-gap-tablist);
+}
+
+/* active style */
 
 .tabs [role="tab"][aria-selected="true"] {
-  background-color: darkgreen;
-  color: beige;
-}
-
-.tabs [role="tabpanel"] {
-  border: solid 1px darkgreen;
-  padding: 10px;
-}
-
-.tabs [role="tablist"] {
-  display: flex;
-  gap: 0;
+  background-color: var(--raTabs-color-darkgreen);
+  color: var(--raTabs-color-beige);
 }
 
 /* disabled style */
 
 .tabs [role="tab"]:disabled {
-  background-color: lightgray;
-  color: gray;
-  cursor: not-allowed;
+  background-color: var(--raTabs-color-lightgray-desibled);
+  color: var(--raTabs-color-gray-desibled);
+  cursor: var(--raTabs-cursor-item-disabled);
 }
