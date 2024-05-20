@@ -1,28 +1,60 @@
 :root {
+  /* CUSTOM PROPERTIES
+
   /* colors */
-  --raTabs-color-text: darkgreen;
-  --raTabs-color-bg: beige;
-  --raTabs-color-text-active: beige;
-  --raTabs-color-bg-active: darkgreen;
-  --raTabs-color-text-desibled: gray;
-  --raTabs-color-bg-desibled: lightgray;
+  --raTabs-color-darkgreen: darkgreen;
+  --raTabs-color-beige: beige;
+  --raTabs-color-gray: gray;
+  --raTabs-color-lightgray: lightgray;
 
   /* border */
-  --raTabs-border-style-tabpanel: solid;
-  --raTabs-border-width-tabpanel: 1px;
-  --raTabs-border-color-tabpanel: darkgreen;
-  --raTabs-border-none-items: none;
+  --raTabs-border-style-solid: solid;
+  --raTabs-border-width: 1px;
+  --raTabs-border-color-darkgreen: darkgreen;
+  --raTabs-border-none: none;
 
   /* paddings */
-  --raTabs-padding-tabs-items: 12px 30px;
-  --raTabs-padding-tabpanel: 10px;
+  --raTabs-padding-top: 12px;
+  --raTabs-padding-bottom: 12px;
+  --raTabs-padding-right: 30px;
+  --raTabs-padding-left: 30px;
+  --raTabs-padding: 10px;
 
-  /* gaps */
-  --raTabs-gap-tablist: 0;
+  /*  gaps */
+  --raTabs-gap: 0;
 
   /* cursor */
-  --raTabs-cursor-item-active: pointer;
-  --raTabs-cursor-item-disabled: not-allowed;
+  --raTabs-cursor-pointer: pointer;
+  --raTabs-cursor-not-allowed: not-allowed;
+
+  /* USER CUSTOM PROPERTIES
+
+  /* user colors */
+  --raTabs-color-text: var(--raTabs-border-color-darkgreen);
+  --raTabs-color-bg: var(--raTabs-border-color-beige);
+  --raTabs-color-text-active: var(--raTabs-border-color-beige);
+  --raTabs-color-bg-active: var(--raTabs-border-color-darkgreen);
+  --raTabs-color-text-desibled: var(--raTabs-color-gray);
+  --raTabs-color-bg-desibled: var(--raTabs-color-lightgray);
+
+  /* user border */
+  --raTabs-border-style-tabpanel: var(--raTabs-border-style-solid);
+  --raTabs-border-width-tabpanel: var(--raTabs-border-width);
+  --raTabs-border-color-tabpanel: var(--raTabs-border-color-darkgreen);
+  --raTabs-border-none-items: var(--raTabs-border-none);
+
+  /* user paddings */
+  --raTabs-padding-tabs-items: var(--raTabs-padding-top)
+    var(--raTabs-padding-right) var(--raTabs-padding-bottom)
+    var(--raTabs-padding-left);
+  --raTabs-padding-tabpanel: var(--raTabs-padding);
+
+  /* user gaps */
+  --raTabs-gap-tablist: var(--raTabs-gap);
+
+  /* user cursor */
+  --raTabs-cursor-item-active: var(--raTabs-cursor-pointer);
+  --raTabs-cursor-item-disabled: var(--raTabs-cursor-not-allowed);
 }
 
 /* tabs */
