@@ -16,7 +16,6 @@ const TabPanel = ({
   children: TabPanel[];
 }) => {
   const [selectedTab, setSelectedTab] = useState(0);
-
   return (
     <div>
       <div role="tablist" aria-label="Tabs">
@@ -28,9 +27,6 @@ const TabPanel = ({
             children={tab.title}
           />
         ))}
-      </div>
-      <div role="tabpanel">
-        {children[selectedTab].content} {}
       </div>
     </div>
   );
