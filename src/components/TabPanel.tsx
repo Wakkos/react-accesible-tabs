@@ -4,11 +4,11 @@ import { Tab } from "./Tab";
 interface TabPanel {
   title?: string;
   tabs: string[];
-  children: React.ReactNode[];
+  children: React.ReactNode;
   content?: React.ReactNode;
 }
 
-export const TabPanel = ({ title, tabs, children, content }: TabPanel) => {
+export const TabPanel = ({ title, tabs, children }: TabPanel) => {
   const [selectedTab, setSelectedTab] = useState(0);
 
   return (
@@ -17,17 +17,16 @@ export const TabPanel = ({ title, tabs, children, content }: TabPanel) => {
       <div role="tablist" aria-label="Tabs">
         {tabs.map((tab, index) => (
           <Tab
-            key={index}
+            key={`tab-${index}`}
             isSelected={selectedTab === index}
             onClick={() => setSelectedTab(index)}
             children={tab}
           />
         ))}
       </div>
-      <div role="tabpanel">
-        {children} {}
+      <div role="tabpanel" id={`tabpanel-${tabs[selectedTab]}`}>
+        {React.Children.toArray(children)[selectedTab]}
       </div>
-      {content && <div>{content}</div>} {}
     </div>
   );
 };
