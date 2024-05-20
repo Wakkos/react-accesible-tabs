@@ -1,12 +1,16 @@
 :root {
   /* colors */
-  --raTabs-color-beige: beige;
-  --raTabs-color-darkgreen: darkgreen;
-  --raTabs-color-gray-desibled: gray;
-  --raTabs-color-lightgray-desibled: lightgray;
+  --raTabs-color-text: darkgreen;
+  --raTabs-color-bg: beige;
+  --raTabs-color-text-active: beige;
+  --raTabs-color-bg-active: darkgreen;
+  --raTabs-color-text-desibled: gray;
+  --raTabs-color-bg-desibled: lightgray;
 
   /* border */
-  --raTabs-border-tabpanel: solid 1px;
+  --raTabs-border-style-tabpanel: solid;
+  --raTabs-border-width-tabpanel: 1px;
+  --raTabs-border-color-tabpanel: darkgreen;
   --raTabs-border-none-items: none;
 
   /* paddings */
@@ -24,15 +28,17 @@
 /* tabs */
 
 .raTabs [role="tab"] {
-  border: var(--raTabs-border-none-items);
+  border-style: var(--raTabs-border-none-items);
   padding: var(--raTabs-padding-tabs-items);
-  background-color: var(--raTabs-color-darkgreen);
-  color: var(--raTabs-color-beige);
+  background-color: var(--raTabs-color-bg);
+  color: var(--raTabs-color-text);
   cursor: var(--raTabs-cursor-item-active);
 }
 
 .raTabs [role="tabpanel"] {
-  border: var(--raTabs-border-tabpanel, --raTabs-color-darkgreen);
+  border-width: var(--raTabs-border-width-tabpanel);
+  border-style: var(--raTabs-border-style-tabpanel);
+  border-color: var(--raTabs-border-color-tabpanel);
   padding: var(--raTabs-padding-tabpanel);
 }
 
@@ -44,14 +50,14 @@
 /* active style */
 
 .tabs [role="tab"][aria-selected="true"] {
-  background-color: var(--raTabs-color-darkgreen);
-  color: var(--raTabs-color-beige);
+  background-color: var(--raTabs-color-bg-active);
+  color: var(--raTabs-color-text-active);
 }
 
 /* disabled style */
 
 .tabs [role="tab"]:disabled {
-  background-color: var(--raTabs-color-lightgray-desibled);
-  color: var(--raTabs-color-gray-desibled);
+  background-color: var(--raTabs-color-bg-desibled);
+  color: var(--raTabs-color-text-desibled);
   cursor: var(--raTabs-cursor-item-disabled);
 }
