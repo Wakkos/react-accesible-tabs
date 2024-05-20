@@ -7,11 +7,13 @@ interface TabProps {
   title?: string;
 }
 
-export const Tab = ({ children, isSelected, onClick }: TabProps) => {
+export const Tab = ({ children, isSelected, onClick, title }: TabProps) => {
   return (
     <button
       role="tab"
       className={`tab ${isSelected ? "tab--selected" : ""}`}
+      aria-selected={isSelected}
+      aria-controls={`tabpanel-${title}`}
       onClick={onClick}
     >
       {children}
