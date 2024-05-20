@@ -8,7 +8,7 @@ Why would you need raTabs?
 
 First of all, RatAbs improves your **usability´s** website by allowing your customers to make less clicks in order to change pages. In addition, a tab component allows you to have a more organize interface by creating a structure for all your content and shape a more consistent user experience.
 
-Secondly, having a tab component will allow you to polish your website´s performance because instead of dowloading all the information at once, only the information´s selected page will be downloaded.
+Secondly, having a tab component will allow you to **polish your website´s performance** because instead of dowloading all the information at once, only the information´s selected page will be downloaded.
 
 ## CSS variables
 
