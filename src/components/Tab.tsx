@@ -4,6 +4,7 @@ interface TabProps {
   children: React.ReactNode;
   isSelected: boolean;
   onClick: () => void;
+  title?: string;
 }
 
 export const Tab = ({ children, isSelected, onClick }: TabProps) => {
