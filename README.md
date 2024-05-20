@@ -46,26 +46,26 @@ All raTabs custom properties are divided into Custom Properties and User Custom 
 
 **User Custom Properties** these are the same custom properties but where are being actively used.
 
-1. **user colors**
+1. **User colors**
    --raTabs-color-text: var(--raTabs-border-color-darkgreen);
    --raTabs-color-bg: var(--raTabs-border-color-beige);
    --raTabs-color-text-active: var(--raTabs-border-color-beige);
    --raTabs-color-bg-active: var(--raTabs-border-color-darkgreen);
    --raTabs-color-text-desibled: var(--raTabs-color-gray);
    --raTabs-color-bg-desibled: var(--raTabs-color-lightgray);
-2. **user border**
+2. **User border**
    --raTabs-border-style-tabpanel: var(--raTabs-border-style-solid);
    --raTabs-border-width-tabpanel: var(--raTabs-border-width);
    --raTabs-border-color-tabpanel: var(--raTabs-border-color-darkgreen);
    --raTabs-border-none-items: var(--raTabs-border-none);
-3. **user paddings**
+3. **User paddings**
    --raTabs-padding-tabs-items: var(--raTabs-padding-top)
    var(--raTabs-padding-right) var(--raTabs-padding-bottom)
    var(--raTabs-padding-left);
    --raTabs-padding-tabpanel: var(--raTabs-padding);
-4. **user gaps**
+4. **User gaps**
    --raTabs-gap-tablist: var(--raTabs-gap);
-5. **user cursor**
+5. **User cursor**
    --raTabs-cursor-item-active: var(--raTabs-cursor-pointer);
    --raTabs-cursor-item-disabled: var(--raTabs-cursor-not-allowed);
 
