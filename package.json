@@ -1,0 +1,28 @@
+{
+  "name": "react-accesible-tabs",
+  "version": "1.0.0",
+  "description": "Create accesible tabs with their respective tabpanels",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wakkos/react-accesible-tabs.git"
+  },
+  "keywords": [
+    "tabs",
+    "accesible",
+    "roletab"
+  ],
+  "author": "ID3_ESAT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wakkos/react-accesible-tabs/issues"
+  },
+  "homepage": "https://github.com/Wakkos/react-accesible-tabs#readme",
+  "dependencies": {
+    "react": "^18.3.1",
+    "typescript": "^5.4.5"
+  }
+}

@@ -1,0 +1,1 @@
+export {default as TabPanelProps} from './tab-panel.interface';
