@@ -17,7 +17,7 @@ export const TabPanel = ({ title, tabs, children }: TabPanel) => {
 				setSelectedTab(
 					(prevSelectedTab) => (prevSelectedTab + 1) % tabs.length
 				);
-			} else if (event.key === 'Arrow Left') {
+			} else if (event.key === 'ArrowLeft') {
 				setSelectedTab(
 					(prevSelectedTab) => (prevSelectedTab - 1 + tabs.length) % tabs.length
 				);
