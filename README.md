@@ -78,6 +78,12 @@ All raTabs custom properties are divided into Custom Properties and User Custom 
 
 ## How to install raTabs
 
+raTabs component will be available through an npm package.
+
+Why npm before other packages?
+
+Mainly because the React project was installed with npm and to continue with the same package.
+
 ### Authors
 
 raTabs was created by the outstanding efforts of ID3 students at ESAT, under the supervision of the almighty lord Wakkos.
