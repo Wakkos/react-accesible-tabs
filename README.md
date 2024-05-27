@@ -1,5 +1,12 @@
 # raTabs
 
+## Index
+
+1.  [raTabs origin and features](#ratabs-origin-and-features)
+2.  [CSS variables](#css-variables)
+3.  [How to install raTabs](#how-to-install-ratabs)
+4.  [Authors](#authors)
+
 ## raTabs origin and features
 
 raTabs was born from the pain that creating a tab component was for the authors.
@@ -87,6 +94,6 @@ raTabs was created by the outstanding efforts of ID3 students at ESAT, under the
 8. xuanidev
 9. migromcab
 10. LauraGutierrezGG
-11.
+11. andreamarttinez
 12.
 13. Wakkos
