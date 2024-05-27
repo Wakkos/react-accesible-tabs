@@ -1,3 +1,5 @@
+@media (prefers-color-scheme: light) {
+}
 :root {
   /* CUSTOM PROPERTIES
 
@@ -26,6 +28,8 @@
   /* cursor */
   --raTabs-cursor-pointer: pointer;
   --raTabs-cursor-not-allowed: not-allowed;
+
+  /* buttons */
 
   /* USER CUSTOM PROPERTIES
 
