@@ -1,6 +1,8 @@
 @media (prefers-color-scheme: light) {
 }
 :root {
+  font-size: 16px;
+
   /* CUSTOM PROPERTIES
 
   /* colors */
@@ -97,3 +99,14 @@
   color: var(--raTabs-color-text-desibled);
   cursor: var(--raTabs-cursor-item-disabled);
 }
+
+/*Desktop Home*/
+
+.home {
+  padding-top: 8.25rem;
+  padding-bottom: 8.25rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+@media
